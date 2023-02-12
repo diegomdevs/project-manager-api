@@ -1,7 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { BaseCommonAttributes } from '../../../common/entities/base-common-entity-attributes';
 
-export class ThingEntity {
-  id: number;
-
+export class ThingEntity extends BaseCommonAttributes {
   name: string;
 }

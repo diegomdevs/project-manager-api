@@ -1,6 +1,6 @@
 import { EntitySchema } from 'typeorm';
 import { UserEntity } from '../entity/user.entity';
-import { BaseColumnSchemaPart } from 'src/modules/things/schema/base-column-schema-part';
+import { BaseColumnSchemaPart } from 'src/common/schemas/base-column-schema-part';
 
 export const UserSchema = new EntitySchema<UserEntity>({
   name: 'User',

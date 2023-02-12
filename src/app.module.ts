@@ -20,10 +20,10 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       autoLoadEntities: true,
     }),
     ThingsModule,
-    PersonsModule,
-    UsersModule,
+    //    PersonsModule,
+    //    UsersModule,
   ],
   controllers: [AppController],
-  providers: [AppService, ,],
+  providers: [AppService],
 })
 export class AppModule {}
