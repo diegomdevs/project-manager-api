@@ -1,10 +1,9 @@
-import Person from 'src/modules/persons/entity/person.entity';
-import { Column, Entity } from 'typeorm';
+import { PersonEntity } from 'src/modules/persons/entity/person.entity';
 
-@Entity()
-export default class User extends Person {
-  @Column()
+export class UserEntity {
+  person: PersonEntity;
+
   email: string;
-  @Column()
+
   password: string;
 }
