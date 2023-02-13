@@ -1,6 +1,7 @@
 import {
   Body,
   Controller,
+  Delete,
   Get,
   Param,
   ParseIntPipe,
@@ -32,5 +33,10 @@ export class ThingsController {
   @Get(':id')
   async findOne(@Param('id', ParseIntPipe) id: number) {
     return await this.thingsService.findOne(id);
+  }
+
+  @Delete(':id')
+  async deleteOne(@Param('id', ParseIntPipe) id: number) {
+    return await this.thingsService.deleteOne(id);
   }
 }
